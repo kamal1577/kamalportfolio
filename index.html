@@ -13,8 +13,6 @@
   <link rel="stylesheet" class="alternate-style" title="pink" href="css/skins/pink.css"disabled/>
   <link rel="stylesheet" class="alternate-style" title="blue" href="css/skins/blue.css" disabled/>
   <link rel="stylesheet" class="alternate-style" title="green" href="css/skins/green.css" disabled/>
-  <link rel="stylesheet" class="alternate-style" title="orange" href="css/skins/orange.css" disabled/>
-  <link rel="stylesheet" class="alternate-style" title="yellow" href="css/skins/yellow.css" disabled/>
   <link rel="stylesheet" href="css/styleSwitcher.css" type="text/css"/>
   
   </head>
@@ -34,22 +32,17 @@
         <!-- Nav -->
         <ul class="nav">
           <li>
-            <a class="active" href="#"><i class="fa fa-home"></i>Home</a>
+            <a class="active" href="#home"><i class="fa fa-home"></i>Home</a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-user"></i>Aout</a>
+            <a href="#about"><i class="fa fa-user"></i>About</a>
+          </li>
+  
+          <li>
+            <a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-list"></i>Services</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa fa-briefcase"></i>Portfolio</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa fa-envelope"></i>Blog</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa fa-comments"></i>Contact</a>
+            <a href="#contact"><i class="fa fa-comments"></i>Contact</a>
           </li>
         </ul>
         <!-- Copyright-->
@@ -61,7 +54,7 @@
       <!-- Main Content -->
       <div class="main-content">
         <!-- Home section -->
-        <section class="home section">
+        <section class="home section" id="home">
           <div class="container">
             <div class="intro">
               <img
@@ -72,10 +65,8 @@
               <h1>Kamal Azizi</h1>
               <p>I am a Web Developer</p>
               <div class="social-links">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
+                <!--<a href="#"><i class="fa fa-facebook"></i></a> -->
                 <a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
               </div>
             </div>
           </div>
@@ -84,7 +75,7 @@
 
         <!-- About Section -->
 
-        <section class="about section">
+        <section class="about section" id="about">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -99,9 +90,7 @@
                       I am Kamal Azizi Alaoui a <span>Web Developer</span>
                     </h3>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Necessitatibus, reprehenderit. Repellat ad officiis
-                      dolores nemo quod dolorum voluptatem expedita maxime.
+                      Dedicated and passionate Web Developer with training and experience in a variety of front-end and back-end systems and technologies. Highly self-motivated and able to work well under limited supervision. Excellent communication skills, both written and spoken, and able to work under pressure to meet tight deadlines. A valued member of any team with an eye for detail and the ability to solve complex problems to meet clients’ specifications.
                     </p>
                   </div>
                 </div>
@@ -109,13 +98,7 @@
                   <div class="personal-info padd-15">
                     <div class="row">
                       <div class="info-item padd-15">
-                        <p>Birthday: <span>22 Mai xxxx</span></p>
-                      </div>
-                      <div class="info-item padd-15">
-                        <p>Website: <span>ghghjg.com</span></p>
-                      </div>
-                      <div class="info-item padd-15">
-                        <p>Degree: <span>M CHEng</span></p>
+                        <p>Degree: <span>Mater CHEng</span></p>
                       </div>
                       <div class="info-item padd-15">
                         <p>State: <span>New York</span></p>
@@ -124,10 +107,10 @@
                         <p>City: <span>Brooklyn</span></p>
                       </div>
                       <div class="info-item padd-15">
-                        <p>Email: <span>ghghjg@htt.com</span></p>
+                        <p>Email: <span>kamalazizialaoui@gmail.com</span></p>
                       </div>
                       <div class="info-item padd-15">
-                        <p>Phone: <span>347XXXXXXX</span></p>
+                        <p>Phone: <span>347-260-5332</span></p>
                       </div>
                       <div class="info-item padd-15">
                         <p>Freelance: <span>Available</span></p>
@@ -135,8 +118,8 @@
                     </div>
                     <div class="row">
                       <div class="buttons padd-15">
-                        <a href="#" class="btn">Download Resume</a>
-                        <a href="#" class="btn">Hire Me</a>
+                        <!--<a href="#" class="btn">Download Resume</a>-->
+                        <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
                       </div>
                     </div>
                   </div>
@@ -170,6 +153,13 @@
                           <div class="skill-percent">60%</div>
                         </div>
                       </div>
+                      <div class="skill-item padd-15">
+                        <h5>Reactjs</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 60%;"></div>
+                          <div class="skill-percent">70%</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -179,34 +169,33 @@
                        <div class="row">
                           <div class="timeline-box padd-15">
                               <div class="timeline shadow-dark">
+                                 <!-- timeline Item -->
+                                 <div class="timeline-item">
+                                  <div class="circle-dot"></div>
+                                   <h6 class="timeline-date">
+                                       <i class="fa fa-calendar"></i> Present
+                                   </h6>
+                                   <h4 class="timeline-title">W3Schools </h4>
+                                   <p class="timeline-text">Learned courses in Bootstrap, SQL, JQuery, HTML, CSS, and JavaScript</p>  <!-- timeline Item End-->
+                                 </div>
+                                <!-- timeline Item -->
+                                <div class="timeline-item">
+                                  <div class="circle-dot"></div>
+                                    <h6 class="timeline-date">
+                                        <i class="fa fa-calendar"></i> 2018
+                                    </h6>
+                                    <h4 class="timeline-title">New York Code + Design Academy</h4>
+                                    <p class="timeline-text">Certification in Web Development and Design</p><!-- timeline Item End-->
+                                </div>
+                               
                                 <!-- timeline Item -->
                                 <div class="timeline-item">
                                   <div class="circle-dot"></div>
                                     <h6 class="timeline-date">
                                         <i class="fa fa-calendar"></i> 2001 
                                     </h6>
-                                    <h4 class="timeline-title">Master In Chemical Engineering</h4>
-                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis non ex minima iste aliquam asperiores exercitationem obcaecati quaerat, maiores repellat illum. Aliquam quisquam sequi dolorum iure velit sunt consequatur aperiam.</p>
-                                  <!-- timeline Item End-->
-                                </div>
-                                <!-- timeline Item -->
-                                <div class="timeline-item">
-                                   <div><class="circle-dot"></div>
-                                    <h6 class="timeline-date">
-                                        <i class="fa fa-calendar"></i> 2001 
-                                    </h6>
-                                    <h4 class="timeline-title">Master In Chemical Engineering</h4>
-                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis non ex minima iste aliquam asperiores exercitationem obcaecati quaerat, maiores repellat illum. Aliquam quisquam sequi dolorum iure velit sunt consequatur aperiam.</p>
-                                  <!-- timeline Item End-->
-                                </div>
-                                <!-- timeline Item -->
-                                <div class="timeline-item">
-                                  <div class="circle-dot"></div>
-                                    <h6 class="timeline-date">
-                                        <i class="fa fa-calendar"></i> 2001 
-                                    </h6>
-                                    <h4 class="timeline-title">Master In Chemical Engineering</h4>
-                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis non ex minima iste aliquam asperiores exercitationem obcaecati quaerat, maiores repellat illum. Aliquam quisquam sequi dolorum iure velit sunt consequatur aperiam.</p>
+                                    <h4 class="timeline-title">Hassan II University Mohammedia Morocco</h4>
+                                    <p class="timeline-text">Master's degree in Chemical Engineering</p>
                                   <!-- timeline Item End-->
                                 </div>
                               </div>
@@ -222,30 +211,29 @@
                             <div class="timeline-item">
                               <div class="circle-dot"></div>
                                 <h6 class="timeline-date">
-                                    <i class="fa fa-calendar"></i> 2001 
+                                    <i class="fa fa-calendar"></i> Present
                                 </h6>
-                                <h4 class="timeline-title">Master In Chemical Engineering</h4>
-                                <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis non ex minima iste aliquam asperiores exercitationem obcaecati quaerat, maiores repellat illum. Aliquam quisquam sequi dolorum iure velit sunt consequatur aperiam.</p>
+                                <h4 class="timeline-title">Web Developer In Self Training</h4>
+                                <p class="timeline-text">
+                                  Self-Employed/Freelance 
+                                </p>
                               <!-- timeline Item End-->
                             </div>
                             <!-- timeline Item -->
                             <div class="timeline-item">
-                               <div><class="circle-dot"></div>
+                               <div class="circle-dot"></div>
                                 <h6 class="timeline-date">
-                                    <i class="fa fa-calendar"></i> 2001 
+                                    <i class="fa fa-calendar"></i>2018 
                                 </h6>
-                                <h4 class="timeline-title">Master In Chemical Engineering</h4>
-                                <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis non ex minima iste aliquam asperiores exercitationem obcaecati quaerat, maiores repellat illum. Aliquam quisquam sequi dolorum iure velit sunt consequatur aperiam.</p>
-                              <!-- timeline Item End-->
-                            </div>
-                            <!-- timeline Item -->
-                            <div class="timeline-item">
-                              <div class="circle-dot"></div>
-                                <h6 class="timeline-date">
-                                    <i class="fa fa-calendar"></i> 2001 
-                                </h6>
-                                <h4 class="timeline-title">Master In Chemical Engineering</h4>
-                                <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis non ex minima iste aliquam asperiores exercitationem obcaecati quaerat, maiores repellat illum. Aliquam quisquam sequi dolorum iure velit sunt consequatur aperiam.</p>
+                                <h4 class="timeline-title">New York Code + Design Academy</h4>
+                                <p class="timeline-text">
+                                  <ul class="ul">
+                                    <li>Coordinated with a team of developers and project manager to devise and implement business requirements to develop website functions</li>
+                                    <li>Used HTML and CSS to write codes and scripts for front-end web development</li>
+                                    <li>Studied SQL and back-end basics to ensure compatibility with website and application functions</li>
+                                    <li>Tested scripts and codes before publishing to check for bugs and glitches</li>
+                                  </ul>
+                                </p>
                               <!-- timeline Item End-->
                             </div>
                           </div>
@@ -258,83 +246,9 @@
         </section>
         <!-- About Section End -->
 
-        <!--Service Section start-->
-        <section class="service section">
-          <div class="container">
-            <div class="row">
-              <div class="section-title padd-15">
-                <h2>Services</h2>
-              </div>
-            </div>
-            <div class="row">
-              <!-- sevice Item -->
-              <div class="service-item padd-15">
-                <div class="service-item-inner">
-                  <div class="icon"><i class="fa fa-laptop"></i></div>
-                  <h4>Web Design</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi voluptas blanditiis quidem quae. Dicta enim, explicabo quibusdam nemo tenetur libero.
-                  </p>
-                </div>
-              </div>
-              <!-- service Item End -->
-               <!-- sevice Item -->
-               <div class="service-item padd-15">
-                <div class="service-item-inner">
-                  <div class="icon"><i class="fa fa-photo"></i></div>
-                  <h4>Photography</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi voluptas blanditiis quidem quae. Dicta enim, explicabo quibusdam nemo tenetur libero.
-                  </p>
-                </div>
-              </div>
-              <!-- service Item End -->
-               <!-- sevice Item -->
-               <div class="service-item padd-15">
-                <div class="service-item-inner">
-                  <div class="icon"><i class="fa fa-code"></i></div>
-                  <h4>Web Development</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi voluptas blanditiis quidem quae. Dicta enim, explicabo quibusdam nemo tenetur libero.
-                    Modi voluptas blanditiis quidem quae. Dicta enim, explicabo quibusdam nemo tenetur libero.
-                  </p>
-                </div>
-              </div>
-              <!-- service Item End -->
-               <!-- sevice Item -->
-               <div class="service-item padd-15">
-                <div class="service-item-inner">
-                  <div class="icon"><i class="fa fa-laptop"></i></div>
-                  <h4>Web Design</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi voluptas blanditiis quidem quae. Dicta enim, explicabo quibusdam nemo tenetur libero.
-                  </p>
-                </div>
-              </div>
-              <!-- service Item End -->
-               <!-- sevice Item -->
-               <div class="service-item padd-15">
-                <div class="service-item-inner">
-                  <div class="icon"><i class="fa fa-rocket"></i></div>
-                  <h4>Seo Optomization</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi voluptas blanditiis quidem quae. Dicta enim, explicabo quibusdam nemo tenetur libero.
-                  </p>
-                </div>
-              </div>
-              <!-- service Item End -->
-             
-               <!-- sevice Item -->
-               <div class="service-item padd-15">
-                <div class="service-item-inner">
-                  <div class="icon"><i class="fa fa-laptop"></i></div>
-                  <h4>Web Design</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi voluptas blanditiis quidem quae. Dicta enim, explicabo quibusdam nemo tenetur libero.
-                  </p>
-                </div>
-              </div>
-              <!-- service Item End -->
-            </div>
-        </section>    
-        <!--Service Section End-->
-
+        
         <!--Portfolio Section-->
-        <section class="portfolio section">
+        <section class="portfolio section" id="portfolio">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -345,7 +259,6 @@
               <div class="portfolio-filter padd-15">
                 <button type="button" class="active" data-filter="all">All</button>
                 <button type="button" data-filter="web-design">Web Design</button>
-                <button type="button" data-filter="wordpress">Wordpress</button>
                 <button type="button" data-filter="photography">Photography</button>
               </div>
             </div>
@@ -369,17 +282,20 @@
               <!-- Portfolio Item  End-->
 
               <!-- Portfolio Item -->
-              <div class="portfolio-item padd-15" data-category="wordpress">
+              <div class="portfolio-item padd-15" data-category="Reactjs">
                 <div class="portfolio-item-inner shadow-dark">
                   <div class="portfolio-img">
                     <img src="images/portfolio/2.jpg" alt="portfolio">
                   </div>
                   <div class="portfolio-info">
-                    <h4>Wordpress</h4>
+                    <h4>Reactjs</h4><br/>
+                    <a href="https://github.com/kamal1577/search_Developers">search_Developers</a>
                     <div class="icon">
                       <i class=" fa fa-search"></i>
                     </div>
                   </div>
+                  
+                  
 
                 </div>
               </div>
@@ -454,78 +370,9 @@
           </section>  
         <!--Portfolio Section End -->
 
-        <!-- Blog section -->
-        <section class="blog section">
-          <div class="container">
-            <div class="row">
-              <div class="section-title padd-15">
-                <h2>Latest Blog</h2>
-              </div>
-            </div>
-            <div class="row">
-              <!-- Blog-Item. -->
-              <div class="blog-item padd-15">
-                <div class="blog-item-inner shadow-dark">
-                  <div class="blog-img">
-                    <img src="images/blog/1.jpg" alt="blog">
-                     <div class="blog-date">
-                       4 Sept 2020
-                     </div>
-                  </div>
-                  <div class="blog-info">
-                    <h4 class="blog-title">Responsive Web Design</h4>
-                    <p class="blog-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, illo iste! Illum alias nesciunt unde,
-                      cumque incidunt debitis deserunt ipsam.</p>
-                    <p class="blog-tags">Tags: <a href="#">Html</a>, <a href="#">CSS</a></p>
-                  </div>
-                </div>
-              </div>
-              <!--Blog-Item End-->
-              <!-- Blog-Item. -->
-              <div class="blog-item padd-15">
-                <div class="blog-item-inner shadow-dark">
-                  <div class="blog-img">
-                    <img src="images/blog/4.jpg" alt="blog">
-                     <div class="blog-date">
-                       4 Sept 2020
-                     </div>
-                  </div>
-                  <div class="blog-info">
-                    <h4 class="blog-title">Creative Slideshow</h4>
-                    <p class="blog-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, illo iste! Illum alias nesciunt unde,
-                      cumque incidunt debitis deserunt ipsam.</p>
-                    <p class="blog-tags">Tags: <a href="#">Html</a>, <a href="#">Javascript</a></p>
-                  </div>
-                </div>
-              </div>
-              <!--Blog-Item End-->
-                 
-              <!-- Blog-Item. -->
-              <div class="blog-item padd-15">
-                <div class="blog-item-inner shadow-dark">
-                  <div class="blog-img">
-                    <img src="images/blog/3.jpg" alt="blog">
-                     <div class="blog-date">
-                       4 Sept 2020
-                     </div>
-                  </div>
-                  <div class="blog-info">
-                    <h4 class="blog-title">Image Gallery Lightbox</h4>
-                    <p class="blog-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, illo iste! Illum alias nesciunt unde,
-                      cumque incidunt debitis deserunt ipsam.</p>
-                    <p class="blog-tags">Tags: <a href="#">Javascript</a></p>
-                  </div>
-                </div>
-              </div>
-              <!--Blog-Item End-->
-
-            </div>
-          </div>
-        </section>    
-        <!-- Blog section End -->
 
         <!-- Contact Section -->
-        <section class="contact section">
+        <section class="contact section" id="contact">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -537,43 +384,37 @@
               <div class="contact-info-item padd-15">
                   <div class="icon"><i class="fa fa-phone"></i></div>
                   <h4>Call Us On</h4>
-                  <p>+1 (347) 000 1111</p>
+                  <p>+1 (347) 260 5332</p>
               </div>
               <!-- contact-info-item End -->
-                <!-- contact-info-item  -->
-                <div class="contact-info-item padd-15">
-                  <div class="icon"><i class="fa fa-map-marker"></i></div>
-                  <h4>office</h4>
-                  <p>210 Derb alhoriya, Casablanca, MOROCCO</p>
-              </div>
-              <!-- contact-info-item End -->
+              
               <!-- contact-info-item  -->
                 <div class="contact-info-item padd-15">
                   <div class="icon"><i class="fa fa-envelope"></i></div>
                   <h4>Email</h4>
-                  <p>info@gmail.com</p>
+                  <p>kamalazizialaoui@gmail.com</p>
               </div>
               <!-- contact-info-item End -->
             </div>
             <!-- Contact Form -->
             <div class="row">
-              <form class="contact-form padd-15">
+              <form class="contact-form padd-15" action="POST" data-netlify="true">
                 <div class="row">
                   <div class="form-item col-6 padd-15">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Name*">
+                        <input type="text" name="name" id="inputName" class="form-control" placeholder="Name*">
                     </div>
                   </div>
                   <div class="form-item col-6 padd-15">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Email*">
+                        <input type="text" id="inputEmail" name="email" class="form-control" placeholder="Email*">
                     </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="form-item col-12 padd-15">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Subject*">
+                        <input type="text" id="inputSubject" name="subject" class="form-control" placeholder="Subject*">
                     </div>
                   </div>
                 </div>
@@ -582,11 +423,17 @@
                     <div class="form-group">
                         <textarea class="form-control" placeholder="Your Message . . ."></textarea>
                     </div>
+                    <div class="form-group">
+                        <input class="form-control" type="file" id="myfile" placeholder="Upload File">
+                    </div>
+                    <div class="form-group">
+                        <div data-netlify-recaptcha="true"></div>
+                    </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-12 padd-15">
-                     <button type="submit" class="btn">Send Message</button>
+                     <button type="submit" class="btn">Submit</button>
                   </div>
                 </div>
               </form>
@@ -625,8 +472,7 @@
           <li><a href="#" title="pink" style="background-color:#ec1839" onclick="setActiveStyle('pink')"></a></li>
           <li><a href="#" title="blue" style="background-color:#2169f3" onclick="setActiveStyle('blue')"></a></li>
           <li><a href="#" title="green" style="background-color:#72b626" onclick="setActiveStyle('green')"></a></li>
-          <li><a href="#" title="orange" style="background-color:#fa5b0f" onclick="setActiveStyle('orange')"></a></li>
-          <li><a href="#" title="yellow" style="background-color:#ffb400" onclick="setActiveStyle('yellow')"></a></li>
+          
         </ul>
     </div>
 
